@@ -44,9 +44,42 @@ footer {
 </head>
 <body>
 <header>
-<h1>Plátano</h1>
+<h1>Plátano</h1>	
 </header>
 <section>
+<script>
+function arg(){
+	if (document.getElementById("p").innerHTML==='Protones: 19'){
+	document.getElementById("a").innerHTML = "<b>ARGÓN<small>(40)</small><b>";
+	document.getElementById("p").innerHTML = "Protones: 18";
+	document.getElementById("n").innerHTML = "Neutrones: 22";
+	document.getElementById("t").innerHTML = "Periodo de semidesintegración: no";
+	document.getElementById("pl").innerHTML = "Núcleos en un plátano promedio: alguno";
+	document.getElementById("r").innerHTML = "Radiactividad: tampoco";
+	}
+}
+function cal(){
+	if (document.getElementById("p").innerHTML==='Protones: 19'){
+	document.getElementById("a").innerHTML = "<b>CALCIO<small>(40)</small><b>";
+	document.getElementById("p").innerHTML = "Protones: 20";
+	document.getElementById("n").innerHTML = "Neutrones: 20";
+	document.getElementById("t").innerHTML = "Periodo de semidesintegración: no";
+	document.getElementById("pl").innerHTML = "Núcleos en un plátano promedio: alguno";
+	document.getElementById("r").innerHTML = "Radiactividad: tampoco";	
+	}
+}
+function pot(){
+	document.getElementById("a").innerHTML = "<b>POTASIO<small>(40)</small><b>";
+	document.getElementById("p").innerHTML = "Protones: 19";
+	document.getElementById("n").innerHTML = "Neutrones: 21";
+	document.getElementById("t").innerHTML = "Periodo de semidesintegración: 1.25·10^9s";
+	document.getElementById("pl").innerHTML = "Núcleos en un plátano promedio: 1.08·10^18";
+	document.getElementById("r").innerHTML = "Radiactividad inicial en dicho plátano: 18.5 Bq";
+}
+//'document.getElementById("a").innerHTML = "<b>ARGÓN<small>(40)</small><b>",document.getElementById("p").innerHTML = "Protones: 18",document.getElementById("n").innerHTML = "Neutrones: 22";document.getElementById("t").innerHTML = "Periodo de semidesintegración: no",document.getElementById("pl").innerHTML = "Núcleos en un plátano promedio: alguno",document.getElementById("r").innerHTML = "Radiactividad: tampoco"'>	
+//'document.getElementById("a").innerHTML = "<b>CALCIO<small>(40)</small><b>",document.getElementById("p").innerHTML = "Protones: 20",document.getElementById("n").innerHTML = "Neutrones: 20",document.getElementById("t").innerHTML = "Periodo de semidesintegración: no",document.getElementById("pl").innerHTML = "Núcleos en un plátano promedio: alguno",document.getElementById("r").innerHTML = "Radiactividad: tampoco"'
+//document.getElementById("a").innerHTML = "<b>POTASIO<small>(40)</small><b>",document.getElementById("p").innerHTML = "Protones: 19",document.getElementById("n").innerHTML = "Neutrones: 21",document.getElementById("t").innerHTML = "Periodo de semidesintegración: 1.25·10^9s ",document.getElementById("pl").innerHTML = "Núcleos en un plátano promedio: 1.08·10^18",document.getElementById("r").innerHTML = "Radiactividad inicial en dicho plátano: 18.5 Bq"'
+</script>  
   <aside>
     <ul>
 	  <li><p id="a"><b>POTASIO<small>(40)</small><b></p></li>
@@ -55,9 +88,9 @@ footer {
 	  <li><p id="t">Periodo de semidesintegración: 1.25·10^9s </p></li>
 	  <li><p id="pl">Núcleos en un plátano promedio: 1.08·10^18 </p></li>
 	  <li><p id="r">Radiactividad inicial en dicho plátano: 18.5 Bq </p></li>
-	  <button type="button" onclick='document.getElementById("a").innerHTML = "<b>CALCIO<small>(40)</small><b>",document.getElementById("p").innerHTML = "Protones: 20",document.getElementById("n").innerHTML = "Neutrones: 20",document.getElementById("t").innerHTML = "Periodo de semidesintegración: no",document.getElementById("pl").innerHTML = "Núcleos en un plátano promedio: alguno",document.getElementById("r").innerHTML = "Radiactividad: tampoco"'>Emisión beta-</button>
-	  <button type="button" onclick='document.getElementById("a").innerHTML = "<b>ARGÓN<small>(40)</small><b>",document.getElementById("p").innerHTML = "Protones: 18",document.getElementById("n").innerHTML = "Neutrones: 22",document.getElementById("t").innerHTML = "Periodo de semidesintegración: no",document.getElementById("pl").innerHTML = "Núcleos en un plátano promedio: alguno",document.getElementById("r").innerHTML = "Radiactividad: tampoco"'>Emisión beta+</button>
-	  <button type="button" onclick='document.getElementById("a").innerHTML = "<b>POTASIO<small>(40)</small><b>",document.getElementById("p").innerHTML = "Protones: 19",document.getElementById("n").innerHTML = "Neutrones: 21",document.getElementById("t").innerHTML = "Periodo de semidesintegración: 1.25·10^9s ",document.getElementById("pl").innerHTML = "Núcleos en un plátano promedio: 1.08·10^18",document.getElementById("r").innerHTML = "Radiactividad inicial en dicho plátano: 18.5 Bq"'>Potasio(otra vez)</button>
+	  <button type="button" onclick='cal()'>Emisión beta-</button>
+	  <button type="button" onclick='arg()'>Captura de e-<br><small>(O emisión beta+ <small>{muy raro}</small> )</small></br></button>
+	  <button type="button" onclick='pot()'>Potasio(otra vez)</button>
 	</ul>
   </aside>
   
@@ -66,7 +99,7 @@ footer {
   </article>
 </section>
 <footer>
-<a href=https://es.wikipedia.org/wiki/Potasio_40><i>potasio <small>(40)</small></i></a>
+<a href=https://es.wikipedia.org/wiki/Potasio_40><i>potasio <small>(40)</small>  <img src="https://media.tenor.com/qnoSfZYajHAAAAAC/spinning-banana-banana.gif" width=200 height=75></i></a>
 </footer>
 </body>
 </html>
